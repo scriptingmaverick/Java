@@ -1,7 +1,7 @@
 class Datatypes {
   public static void main(String[] args) {
-        // Declare a variable of type int
-        int myNumber = 10;
+    // Declare a variable of type int
+    int myNumber = 10;
 
     // Declare a variable of type double
     double myDouble = 5.5;
