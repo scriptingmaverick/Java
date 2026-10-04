@@ -36,5 +36,25 @@ public class Array_example {
       }
       System.out.println();
     }
+
+    int jaggedArr [][] = new int[3][];
+
+    for(int i=0; i<3; i++){
+      jaggedArr[i] = new int[(int)(Math.random() * 10) + 1];
+    }
+
+    for(int i=0; i<2; i++){
+      for(int j=0; j<jaggedArr[i].length; j++){
+        jaggedArr[i][j] = (int) (Math.random() * 10);
+      }
+    }
+
+
+    for(int n[] : jaggedArr){
+      for(int m : n){
+        System.out.print(m + " ");
+      }
+      System.out.println();
+    }
   }
 }
