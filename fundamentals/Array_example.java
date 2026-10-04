@@ -1,5 +1,8 @@
 public class Array_example {
   public static void main(String[] args) {
+
+    System.out.println("Array Example: \n");
+
     int nums[] = new int[4];
     nums[0] = 10;
 
@@ -20,6 +23,7 @@ public class Array_example {
     // nums2[6]  = 6;
     // nums[5] = 10; 
 
+    System.err.println("\n--------------------\n\nMultidimensional Array Example: \n");
 
     int multiArr [][] = new int[2][3];
 
@@ -37,13 +41,15 @@ public class Array_example {
       System.out.println();
     }
 
+    System.err.println("\n--------------------\n\nJagged Array Example: \n");
+
     int jaggedArr [][] = new int[3][];
 
     for(int i=0; i<3; i++){
       jaggedArr[i] = new int[(int)(Math.random() * 10) + 1];
     }
 
-    for(int i=0; i<2; i++){
+    for(int i=0; i<3; i++){
       for(int j=0; j<jaggedArr[i].length; j++){
         jaggedArr[i][j] = (int) (Math.random() * 10);
       }
