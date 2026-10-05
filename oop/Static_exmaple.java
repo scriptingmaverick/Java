@@ -10,7 +10,7 @@ class Mobile{
   }
 
   public static void displayCategory(Mobile mobile){
-    System.out.println("Price: " + mobile.price + " Brand: " + mobile.brand + " Category: " + mobile.category);
+    System.out.println("Price: " + mobile.price + " Brand: " + mobile.brand + " Category: " + category);
   }
 }
 
