@@ -11,7 +11,7 @@ public class QuestionService {
 
   public void displayQuestions(){
     for (Question question : questions) {
-      System.out.println(question.getQuesiton());
+      System.out.println(question.toString());
     }
   }
 }

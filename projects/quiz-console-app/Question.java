@@ -73,4 +73,14 @@ public class Question {
   public void setAnswer(String answer) {
     this.answer = answer;
   }
+
+  public String toString() {
+    return "Question ID: " + id + "\n" +
+           "Question: " + quesiton + "\n" +
+           "Option 1: " + opt1 + "\n" +
+           "Option 2: " + opt2 + "\n" +
+           "Option 3: " + opt3 + "\n" +
+           "Option 4: " + opt4 + "\n" +
+           "Answer: " + answer;
+  }
 }
