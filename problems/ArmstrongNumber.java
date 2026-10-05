@@ -13,6 +13,6 @@ public class ArmstrongNumber {
     }
 
     
-    System.out.println(orig_num + (sum == orig_num ? "" : " isn't") + " an armstrong number");
+    System.out.println(orig_num + " is" + (sum == orig_num ? "" : "n't") + " an armstrong number");
   }  
 }
