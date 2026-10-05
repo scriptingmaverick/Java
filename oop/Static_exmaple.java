@@ -8,6 +8,10 @@ class Mobile{
     System.out.println("Brand: " + brand);
     System.out.println("Category: " + category);
   }
+
+  public static void displayCategory(Mobile mobile){
+    System.out.println("Price: " + mobile.price + " Brand: " + mobile.brand + " Category: " + mobile.category);
+  }
 }
 
 public class Static_exmaple {
@@ -30,5 +34,7 @@ public class Static_exmaple {
 
     System.out.println("\nMobile 2 Details:");
     mobile2.show();
+
+    Mobile.displayCategory(mobile1);
   }
 }
