@@ -1,4 +1,5 @@
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 public class SetExample {
@@ -9,6 +10,8 @@ public class SetExample {
     nums.add(3);
     nums.add(2);
 
-    System.out.println(nums);
+    Iterator numsIterator =  nums.iterator();
+    while(numsIterator.hasNext())
+      System.out.println(numsIterator.next());
   }
 }
