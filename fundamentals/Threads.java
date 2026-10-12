@@ -11,7 +11,7 @@ class A extends Thread{
   }
 }
 
-class B extends Thread{
+class B implements Runnable{
   public void run(){
     for(int i = 0; i < 10; i++){
       System.out.println("Hello");
@@ -27,9 +27,11 @@ class B extends Thread{
 public class Threads {
   public static void main(String[] a){
     A obj = new A();
-    B obj2 = new B();
+    Runnable obj2 = new B();
+
+    Thread t1 = new Thread(obj2);
 
     obj.start();
-    obj2.start();
+    t1.start();
   }
 }
