@@ -1,8 +1,6 @@
 package org.example;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import java.sql.*;
 
 public class Main {
     static void main() throws ClassNotFoundException, SQLException {
@@ -19,12 +17,23 @@ public class Main {
         String url = "jdbc:postgresql://localhost:5433/jdbc_demo";
         String username = "postgres";
         String password = "0000";
+        String query = "select sname from student where sid=1";
 
 //        not needed now
 //        Class.forName("org.postgresql.Driver");
 
         Connection conn = DriverManager.getConnection(url, username, password);
-
         System.out.println("Connected to database successfully");
+
+        Statement stmt = conn.createStatement();
+        ResultSet resultSet = stmt.executeQuery(query);
+        while (resultSet.next()) {
+            String sname = resultSet.getString("sname");
+            System.out.println(sname);
+        }
+
+        stmt.close();
+        conn.close();
+        System.out.println("Connection closed successfully");
     }
 }
