@@ -1,18 +1,17 @@
 package org.example;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    static void main() {
+    static void main() throws ClassNotFoundException {
         /*
-            import package
-            load and register
-            create connection
-            create statement
-            execute statement
-            process the results
-            close
+            1. import package
+            2. load and register
+            3. create connection
+            4. create statement
+            5. execute statement
+            6. process the results
+            7. close
          */
-        
+
+        Class.forName("org.postgresql.Driver");
     }
 }
