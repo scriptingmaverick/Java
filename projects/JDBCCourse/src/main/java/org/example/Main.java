@@ -1,0 +1,18 @@
+package org.example;
+
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+public class Main {
+    static void main() {
+        /*
+            import package
+            load and register
+            create connection
+            create statement
+            execute statement
+            process the results
+            close
+         */
+        
+    }
+}
